@@ -1,0 +1,502 @@
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1a1a1a;
+  color: whitesmoke;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 9%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: crimson;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li.active a {
+  color: crimson;
+}
+
+section {
+  min-height: 100vh;
+  padding: 100px 9% 50px; 
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.home {
+  background: #222;
+}
+
+.foto img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.foto img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(220, 20, 60, 0.5);
+  
+}
+
+.home-info h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.home-info p{
+    margin-bottom: 20px;
+}
+
+.btn-sci {
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: crimson;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+.sci a {
+    border:2px solid crimson;
+    border-radius: 50%;
+    padding: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.sci a:hover {
+  color: crimson;
+  background-color: white;
+}
+
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: crimson;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.about h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,crimson, #ffffff);
+}
+
+.about-content h2{
+  text-align: center;
+  width: 140%;
+  display: block;
+
+}
+
+.about-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction : column;
+  width : 800px;
+}
+
+.about-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.about-card h3 {
+  margin: 10px 0;
+  color: #ffd6e0;
+}
+
+.biodata-list {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.biodata-list {
+  list-style: none;
+  padding: 0;
+}
+.about-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+
+.education {
+  background: #252525;
+  flex-direction: column;
+  text-align: center;
+}
+
+.education h1 {
+  color: crimson;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills {
+  background: #1f1f1f;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: crimson;
+    position: relative;
+    display: inline-block;
+}
+
+.skills h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,crimson, #ffffff);
+}
+
+.skills h1 {
+  color: crimson;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.about .bagian h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.about .bagian ul {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+.tugas img{
+    width: 300px;
+    height: auto;
+}
+
+.skills {
+  padding: 80px 9%;
+  background: #1a1a1a;
+  color: whitesmoke;
+  min-height: 100vh;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-card {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: #dc143c;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.skill-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.project {
+  padding: 80px 9%;
+  background: #1a1a1a;
+  color: whitesmoke;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.project h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: crimson;
+    position: relative;
+    display: inline-block;
+}
+
+.project h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,crimson, #ffffff);
+}
+
+.project-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: #dc143c;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.project-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.service {
+  padding: 80px 9%;
+  background: #1a1a1a;
+  color: whitesmoke;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.service h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: crimson;
+    position: relative;
+    display: inline-block;
+}
+
+.service h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,crimson, #ffffff);
+}
+
+.service-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  background: #dc143c;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.service-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.contact {
+  padding: 80px 9%;
+  background: #1a1a1a;
+  color: whitesmoke;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: crimson;
+    position: relative;
+    display: inline-block;
+}
+
+.contact h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,crimson, #ffffff);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #2a2a2a;
+  color: whitesmoke;
+}
+
+.contact-form button {
+  background: #dc143c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #a80f2e;
+}
+
+.contact-info {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #dc143c;
+  font-size: 20px;
+}
+
+.contact-info .sci {
+  margin-top: 20px;
+}
+
+.contact-info .sci a {
+  margin-right: 15px;
+  font-size: 22px;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.contact-info .sci a:hover {
+  color: #dc143c;
+}
+

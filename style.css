@@ -303,6 +303,8 @@ section {
   color: whitesmoke;
   min-height: 100vh;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .project h2 {
@@ -410,6 +412,8 @@ section {
   color: whitesmoke;
   min-height: 100vh;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact h2 {

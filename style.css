@@ -496,4 +496,7 @@ section {
   margin-top: 50px;
 }
 
-
+.footer p{
+  text-align: center;
+  font-size: 25px;
+}

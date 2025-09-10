@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Membuat PortFolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>  
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!-- CSS Eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,17 +22,14 @@
     </ul>
   </nav>    
 
- 
   <section class="home">
-
     <div class="foto">        
       <img src="kebaya 1.jpg" alt="image">
     </div>
 
-
     <div class="home-info">
       <p>-Hallo</p>
-      <h2>Saya <span style="color: #dc143c;">Nheyna</span> Az-Zahra</h2>
+      <h2>Saya <span class="highlight">Nheyna</span> Az-Zahra</h2>
       <p>Saya merupakan siswa SMKN 40 Jakarta. Jurusan saya adalah rekayasa perangkat lunak.</p>
 
       <div class="sci">
@@ -46,12 +45,9 @@
     </div>
   </section>
 
-
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-content">
+  <section class="about" id="about">
+    <div class="container">
       <h2>About Me</h2>
-     
       <div class="about-grid">
         <div class="about-card">
           <i class="fas fa-user"></i>
@@ -61,8 +57,6 @@
             Dengan latar belakang Rekayasa Perangkat Lunak, saya terus belajar dan meningkatkan kemampuan dalam menggunakan teknologi modern.
           </p>
         </div>
-
-       
         <div class="about-card">
           <i class="fas fa-id-card"></i>
           <h3>Biodata Singkat</h3>
@@ -71,12 +65,9 @@
             <li><strong>Umur:</strong> 16</li>
             <li><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 11 September 2008</li>
             <li><strong>Agama :</strong> Islam</li>
-             <li><strong>Alamat :</strong> Pesona Indah Drama, Cihideung Udik, Bogor</li>
-
+            <li><strong>Alamat :</strong> Pesona Indah Drama, Cihideung Udik, Bogor</li>
           </ul>
         </div>
-
-       
         <div class="about-card">
           <i class="fas fa-graduation-cap"></i>
           <h3>Pendidikan</h3>
@@ -85,85 +76,50 @@
             Fokus pada pengembangan aplikasi web dan mobile dengan teknologi terbaru.
           </p>
         </div>
-
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-  
   <section class="skills" id="skills"> 
-  <div class="container">
-    <h2>My Skill</h2>
-    <p>Berikut adalah beberapa keahlian yang saya kuasai.</p>
+    <div class="container">
+      <h2>My Skill</h2>
+      <p>Berikut adalah beberapa keahlian yang saya kuasai.</p>
 
-    <div class="skills-grid" id="skills-grid">
-      <!-- Skill cards akan di-generate oleh JS -->
+      <div class="skills-grid" id="skills-grid">
+        <!-- Skill cards akan di-generate oleh JS -->
+      </div>
     </div>
-  </div>
-</section>
-
-<script>
-  const skills = [
-    { icon: "ri-html5-line", title: "HTML", desc: "Mampu membuat struktur website yang rapi dan sesuai standar." },
-    { icon: "ri-css3-line", title: "CSS", desc: "Menata tampilan website dengan desain modern & responsif." },
-    { icon: "ri-paint-brush-line", title: "UI/UX Design", desc: "Membuat desain aplikasi menarik menggunakan Figma." },
-    { icon: "ri-chat-1-line", title: "Communication", desc: "Mampu menyampaikan ide dengan jelas dan efektif dalam tim.", type: "soft" },
-    { icon: "ri-group-line", title: "Teamwork", desc: "Bekerja sama dengan baik bersama anggota tim untuk mencapai tujuan.", type: "soft" },
-    { icon: "ri-lightbulb-line", title: "Problem Solving", desc: "Mampu menemukan solusi kreatif untuk mengatasi masalah yang muncul.", type: "soft" }
-  ];
-
-  const skillsGrid = document.getElementById("skills-grid");
-
-  skills.forEach(skill => {
-    const card = document.createElement("div");
-    card.classList.add("skill-card");
-    if(skill.type === "soft") card.classList.add("soft-skill");
-
-    card.innerHTML = `
-      <i class="${skill.icon}"></i>
-      <h3>${skill.title}</h3>
-      <p>${skill.desc}</p>
-    `;
-
-    skillsGrid.appendChild(card);
-  });
-</script>
-</section>
-
+  </section>
 
   <section class="project" id="project"> 
-  <div class="container">
-    <h2>My Project</h2>
-    <p style="color:#ECEFCA; font-size:18px; margin-bottom:20px;">
-      Berikut adalah beberapa proyek yang pernah saya kerjakan di bidang teknologi & desain.
-    </p>
+    <div class="container">
+      <h2>My Project</h2>
+      <p>
+        Berikut adalah beberapa proyek yang pernah saya kerjakan di bidang teknologi & desain.
+      </p>
 
-    <div class="project-grid">
-      <div class="project-card">
-        <i class="ri-palette-line"></i>
-        <a href="https://www.figma.com/design/TD1flSCMyBLS52QxgFn0W5/Solstice?node-id=0-1&p=f&t=nvSSZP4Zy1TbCZes-0" target="_blank"> 
-        <h3>UI Design</h3>
-        </a>
-        <p>Membuat desain aplikasi menggunakan figma.</p>
-      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <i class="ri-palette-line"></i>
+          <a href="https://www.figma.com/design/TD1flSCMyBLS52QxgFn0W5/Solstice?node-id=0-1&p=f&t=nvSSZP4Zy1TbCZes-0" target="_blank"> 
+            <h3>UI Design</h3>
+          </a>
+          <p>Membuat desain aplikasi menggunakan figma.</p>
+        </div>
 
-      <div class="project-card">
-        <i class="ri-apps-line"></i>
-        <a href="https://nheynaa-sys.github.io/PortofolioNheyna/" target="_blank"><h3>Website Portofolio</h3></a>
-        <p>Membuat portofolio pribadi menggunakan visual studio code.</p>
+        <div class="project-card">
+          <i class="ri-apps-line"></i>
+          <a href="https://nheynaa-sys.github.io/PortofolioNheyna/" target="_blank"><h3>Website Portofolio</h3></a>
+          <p>Membuat portofolio pribadi menggunakan visual studio code.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-   <section class="contact" id="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p style="color:#ECEFCA; font-size:18px; margin-bottom:20px;">
+      <p>
         Jika ingin bekerjasama atau sekadar say hi 👋, silakan hubungi saya melalui form berikut atau media sosial saya.
       </p>
 
@@ -182,25 +138,49 @@
           <p><i class="ri-phone-line"></i> +62 838-7478-7280</p>
 
           <div class="sci">
-          <a href="#"><i class="ri-whatsapp-line"></i></a>
-          <a href="https://www.tiktok.com/@starlvcies11098?_t=ZS-8ymWIFlYXfZ&_r=1"><i class="ri-tiktok-line"></i></a>
-          <a href="#"><i class="ri-youtube-line"></i></a>
-          <a href="https://www.instagram.com/nhynazrn/profilecard/?igsh=MXUydDhkMzkzM3J4ZA=="><i class="ri-instagram-line"></i></a>
-        </div>
+            <a href="#"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://www.tiktok.com/@starlvcies11098?_t=ZS-8ymWIFlYXfZ&_r=1"><i class="ri-tiktok-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+            <a href="https://www.instagram.com/nhynazrn/profilecard/?igsh=MXUydDhkMzkzM3J4ZA=="><i class="ri-instagram-line"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-<footer class="footer">
-  <div class="footer-container">
+  <footer class="footer">
+    <div class="footer-container">
+      <h3>© 2025 Nhynazrn. All Rights Reserved.</h3>
+    </div>
+  </footer>
 
-    <h3>© 2025 Nhynazrn. All Rights Reserved.</h3>
-  </div>
-</footer>
+  <!-- JS untuk Skill cards -->
+  <script>
+    const skills = [
+      { icon: "ri-html5-line", title: "HTML", desc: "Mampu membuat struktur website yang rapi dan sesuai standar." },
+      { icon: "ri-css3-line", title: "CSS", desc: "Menata tampilan website dengan desain modern & responsif." },
+      { icon: "ri-paint-brush-line", title: "UI/UX Design", desc: "Membuat desain aplikasi menarik menggunakan Figma." },
+      { icon: "ri-chat-1-line", title: "Communication", desc: "Mampu menyampaikan ide dengan jelas dan efektif dalam tim.", type: "soft" },
+      { icon: "ri-group-line", title: "Teamwork", desc: "Bekerja sama dengan baik bersama anggota tim untuk mencapai tujuan.", type: "soft" },
+      { icon: "ri-lightbulb-line", title: "Problem Solving", desc: "Mampu menemukan solusi kreatif untuk mengatasi masalah yang muncul.", type: "soft" }
+    ];
+
+    const skillsGrid = document.getElementById("skills-grid");
+
+    skills.forEach(skill => {
+      const card = document.createElement("div");
+      card.classList.add("skill-card");
+      if(skill.type === "soft") card.classList.add("soft-skill");
+
+      card.innerHTML = `
+        <i class="${skill.icon}"></i>
+        <h3>${skill.title}</h3>
+        <p>${skill.desc}</p>
+      `;
+
+      skillsGrid.appendChild(card);
+    });
+  </script>
+
 </body>
 </html>
-     
-
-
-

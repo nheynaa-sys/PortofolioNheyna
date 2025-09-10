@@ -224,7 +224,7 @@ section {
 
 .soft-skill {
   background: rgba(255, 255, 255, 0.1);
-  border-color: #FFD700;
+  border-color: hsl(60, 16%, 96%);
 }
 
 .about .bagian h3 {

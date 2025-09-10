@@ -147,45 +147,6 @@ section {
   margin-bottom: 20px;
 }
 
-.skills {
-  background: #1f1f1f;
-  flex-direction: column;
-  text-align: center;
-}
-
-.skills h2 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    color: crimson;
-    position: relative;
-    display: inline-block;
-}
-
-.skills h2:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg,crimson, #ffffff);
-}
-
-.skills h1 {
-  color: crimson;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.skills ul {
-  list-style: none;
-}
-
-.skills ul li {
-  margin: 10px 0;
-  font-size: 1.2rem;
-}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -224,7 +185,7 @@ section {
 
 .soft-skill {
   background: rgba(255, 255, 255, 0.1);
-  border-color: hsl(60, 16%, 96%);
+  border-color: #fffffe;
 }
 
 .about .bagian h3 {
